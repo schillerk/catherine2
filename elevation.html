@@ -260,7 +260,7 @@
 
 	window.addEventListener('scroll', function() {
 		const d = $(document).height();
-		const s = $(window).scrollTop() - d/17 - 200;
+		const s = $(window).scrollTop();
 		// const c = $(window).height();
 		lines[0].forEach(line => {
 			const lineElt = d3.select(line);
