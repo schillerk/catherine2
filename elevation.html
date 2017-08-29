@@ -145,6 +145,10 @@
 		text-decoration: none;
 	}
 
+	a:-webkit-any-link {
+		text-decoration: none;
+	}
+
 	html {
 		background: linear-gradient(to bottom, #fff 25%, #fbc2eb 50%, rgb(105,117,146) 75%);
 	}
@@ -362,14 +366,14 @@
 	const lines = d3.selectAll('.connection');
 	lines.attr('stroke-width', 2)
 		 .attr('stroke', 'black')
-     .attr('stroke-opacity', .25)
+     .attr('stroke-opacity', .20)
 		 .attr('fill', 'none');
 
 	const circles = d3.selectAll('.node');
 	circles.attr('r', RADIUS)
 		   .attr('stroke', 'black')
 	   	   .attr('stroke-width', 2)
-	   	   .attr('stroke-opacity', .25)
+	   	   .attr('stroke-opacity', .20)
 	       .attr('stroke-dashoffset', 200)
 	       .attr('stroke-dasharray', 200)
 	       .attr('fill', 'none');
